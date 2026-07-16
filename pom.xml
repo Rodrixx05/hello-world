@@ -40,6 +40,15 @@
           <target>17</target>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
@@ -54,28 +63,22 @@
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
-
             <plugin>
               <artifactId>maven-jxr-plugin</artifactId>
             </plugin>
-
             <plugin>
               <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
-
             <plugin>
               <artifactId>maven-pmd-plugin</artifactId>
             </plugin>
-
             <plugin>
               <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
-
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>findbugs-maven-plugin</artifactId>
             </plugin>
-
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>taglist-maven-plugin</artifactId>
@@ -95,6 +98,12 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.4.1</version>
         </plugin>
 
         <plugin>
